@@ -189,7 +189,6 @@ def draw_hand_minimal(frame, lm, W, H, ded):
         if ded[i]:
             cv2.circle(frame, px(lm[tip], W, H), 3, (80, 240, 80), -1, cv2.LINE_AA)
 
-
 def hud(frame, img_actual, manos_info, W, H):
     nombre = img_actual if img_actual else "neutral"
     col    = (80, 220, 80) if img_actual else (160, 160, 160)
